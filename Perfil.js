@@ -1,0 +1,23 @@
+let recetaAEliminar = null;
+const confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'));
+
+function confirmarEliminar(id) {
+    recetaAEliminar = id;
+    confirmModal.show();
+}
+
+function eliminarReceta() {
+    if (recetaAEliminar) {
+        const receta = document.getElementById(`receta-${recetaAEliminar}`);
+        if (receta) {
+            receta.remove();
+        }
+    }
+    confirmModal.hide();
+}
+
+document.getElementById('confirmDelete').addEventListener('click', eliminarReceta);
+
+document.querySelectorAll('a').forEach(link => {
+    link.href = link.href.toLowerCase();
+});

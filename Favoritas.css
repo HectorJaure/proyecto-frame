@@ -1,0 +1,148 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 80px;
+}
+
+/* Header estilo similar a Crear Receta */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.atras {
+    height: 30px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.btn-menu {
+    background-color: #76b293;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+}
+
+.btn-menu:hover {
+    background-color: #5d9c7d;
+    color: white;
+}
+
+.titulo {
+    text-align: center;
+    color: #343a40;
+    margin: 20px 0 30px;
+    font-style: italic;
+}
+
+.contenedor-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 15px;
+    margin-bottom: 40px;
+}
+
+.caja {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.caja:hover {
+    transform: translateY(-5px);
+}
+
+.titulo-caja {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.caja img {
+    max-width: 100%;
+    height: 120px;
+    object-fit: contain;
+}
+
+footer {
+    background-color: #76b293;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.logof {
+    height: 40px;
+    margin-top: 10px;
+}
+
+/* Estilos para el botón de eliminar */
+.btn-eliminar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    color: #dc3545;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.btn-eliminar:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .contenedor-categorias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header {
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+    }
+
+    .menus {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    body {
+        padding-top: 120px;
+    }
+}

@@ -17,7 +17,3 @@ function eliminarReceta() {
 }
 
 document.getElementById('confirmDelete').addEventListener('click', eliminarReceta);
-
-document.querySelectorAll('a').forEach(link => {
-    link.href = link.href.toLowerCase();
-});

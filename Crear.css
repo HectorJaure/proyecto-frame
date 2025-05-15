@@ -1,0 +1,211 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 50px;
+    order: 3;
+}
+
+.atras {
+    height: 30px;
+    order: 1;
+}
+
+.menus {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    order: 2;
+}
+
+.btn-menu {
+    background-color: #76b293;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-menu:hover {
+    background-color: #5d9c7d;
+}
+
+.titulop {
+    text-align: center;
+    color: #343a40;
+    margin: 30px 0;
+    font-size: 2rem;
+}
+
+.busquedac {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 30px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.busquedac input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px 0 0 8px;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    background-color: #76b293;
+    border: none;
+    padding: 0 15px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #5d9c7d;
+}
+
+.submit-icon {
+    height: 20px;
+}
+
+.filtros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    padding: 0 15px;
+}
+
+.filtros select {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+
+.titulop1 {
+    color: #76b293;
+    margin: 20px 15px 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #76b293;
+}
+
+.ingredientes-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    border-collapse: collapse;
+}
+
+.ingredientes-table th,
+.ingredientes-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+.ingredientes-table th {
+    background-color: #76b293;
+    color: white;
+}
+
+.btn-agregar {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.agregar-icon {
+    height: 25px;
+}
+
+.textareaPre {
+    width: 100%;
+    max-width: 800px;
+    height: 200px;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    margin: 0 auto 30px;
+    display: block;
+    resize: vertical;
+}
+
+footer {
+    background-color: #76b293;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-top: 10px;
+}
+
+@media (max-width: 640px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 3.5%;
+        right: 5%;
+        width: 4rem;
+        height: auto;
+    }
+
+    .atras {
+        position: absolute;
+        top: 3.5%;
+        left: 5%;
+        width: 4rem;
+        height: auto;
+    }
+
+    .menus {
+        order: 3;
+        position: static;
+        transform: none;
+        left: auto;
+        width: 0%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .filtros {
+        grid-template-columns: 1fr;
+    }
+}

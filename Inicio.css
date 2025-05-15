@@ -1,104 +1,122 @@
 body {
-            background-color: #f8f9fa;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-        }
-        .logo {
-            height: 60px;
-            margin-right: 15px;
-        }
-        .atras {
-            height: 40px;
-        }
-        .titulo-principal {
-            text-align: center;
-            margin: 10px 0 25px;
-            color: #343a40;
-            flex-grow: 1;
-        }
-        .menu-botones {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .card-receta {
-            background-color: #76b293;
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .card-receta:hover {
-            transform: translateY(-5px);
-        }
-        .card-img-container {
-            height: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 10px 0;
-        }
-        .card-receta .card-img {
-            max-width: 100%;
-            max-height: 120px;
-            object-fit: contain;
-        }
-        .card-title {
-            text-align: center;
-            font-weight: bold;
-            font-size: 1.1rem;
-            min-height: 3rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 10px;
-        }
-        .card-body {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            padding: 15px;
-        }
-        .ingredientes {
-            margin-top: auto;
-        }
-        .list-group-item {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            padding: 8px 15px;
-        }
-        footer {
-            background-color: #76b293;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            margin-top: auto;
-        }
-        footer a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .logof {
-            height: 40px;
-            margin-top: 10px;
-        }
-        .main-content {
-            flex: 1;
-            padding-bottom: 30px;
-        }
-        .equal-height {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 15px;
+}
+
+.atras {
+    height: 40px;
+}
+
+.titulo-principal {
+    text-align: center;
+    margin: 10px 0 25px;
+    color: #343a40;
+    flex-grow: 1;
+}
+
+.menu-botones {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-receta {
+    background-color: #76b293;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-receta:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-container {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.card-receta .card-img {
+    max-width: 100%;
+    max-height: 120px;
+    object-fit: contain;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.ingredientes {
+    margin-top: auto;
+}
+
+.list-group-item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 8px 15px;
+}
+
+footer {
+    background-color: #76b293;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.logof {
+    height: 40px;
+    margin-top: 10px;
+}
+
+.main-content {
+    flex: 1;
+    padding-bottom: 30px;
+}
+
+.equal-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

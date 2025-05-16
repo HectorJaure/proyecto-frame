@@ -13,30 +13,27 @@
 
 <body>
     <!-- Encabezado -->
-    <header class="container">
+    <header class="container main-content">
         <div class="header-container">
             <img src="assets/logo.png" alt="logo" class="logo">
-            <h1 class="titulo-principal"><i>Alejandria Culinaria</i></h1>
-            <a href="Perfil.html"><img src="assets/Perfil.png" alt="Imagen perfil" class="atras"></a>
+            <div class="menu-botones" style="margin-top: 2rem;">
+                <a href="Busqueda.html" class="btn btn-success mx-2 mb-2">Búsqueda avanzada</a>
+                <a href="Crear.html" class="btn btn-success mx-2 mb-2">Publicar recetas</a>
+                <a href="Favoritas.html" class="btn btn-success mx-2 mb-2">Recetas favoritas</a>
+            </div>
+            <a href="Busqueda.html"><img src="assets/Atras.png" alt="Imagen perfil" class="atras"></a>
         </div>
     </header>
 
     <!-- Contenido principal -->
     <main class="container main-content">
-        <!-- Menú de botones -->
-        <div class="menu-botones">
-            <a href="Busqueda.html" class="btn btn-success mx-2 mb-2">Búsqueda avanzada</a>
-            <a href="Crear.html" class="btn btn-success mx-2 mb-2">Publicar recetas</a>
-            <a href="Favoritas.html" class="btn btn-success mx-2 mb-2">Recetas favoritas</a>
-        </div>
-
         <!-- Sección de recetas -->
-        <h2 class="text-center mb-4">Nuestras Recetas</h2>
+        <h2 class="text-center mb-4" style="margin-top: -3rem;">Recetas</h2>
         <div class="row g-4">
             <!-- Tarjeta 1 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3" href="">
                 <div class="card card-receta equal-height">
-                    <a href="Receta.html" class="card" style="text-decoration: none;">
+                    <a href="Receta.html" class="card" style="text-decoration: none; border: none;">
                         <div class="card-body">
                             <h3 class="card-title">Ensalada Fresca con Ingredientes Orgánicos</h3>
                             <div class="card-img-container">
@@ -72,6 +69,7 @@
                             </ul>
                         </div>
                     </div>
+
                 </div>
             </div>
 

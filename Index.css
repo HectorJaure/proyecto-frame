@@ -19,7 +19,7 @@ body {
 
 .login-image {
     flex: 1;
-    background: url('assets/Inicio.png') center/cover no-repeat;
+    background: url('./assets/Inicio.png') center/cover no-repeat;
     display: flex;
 }
 

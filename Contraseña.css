@@ -103,20 +103,6 @@ input[type="email"]:focus {
     text-decoration: underline;
 }
 
-footer {
-    background-color: #76b293;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: auto;
-}
-
-footer a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
 .logof {
     height: 40px;
     margin-top: 10px;

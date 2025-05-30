@@ -178,6 +178,7 @@ body {
     width: 100%;
     margin: 0 auto 30px;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 .ingredientes-table th,

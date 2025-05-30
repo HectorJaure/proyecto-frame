@@ -176,12 +176,16 @@ body {
 
 .ingredientes-input{
     width: 90%;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 1rem;
 }
 .ingredientes-table {
     width: 100%;
     margin: 0 auto 30px;
     border-collapse: collapse;
     table-layout: fixed;
+    overflow-x: auto;
 }
 
 .ingredientes-table th,

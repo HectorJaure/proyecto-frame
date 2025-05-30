@@ -122,11 +122,13 @@ body {
     }
 
     .logo {
-        order: 1;
+        margin-left: 40rem;
+        position: absolute;
     }
 
     .btn-atras {
-        order: 2;
+        margin-right: 40rem;
+        position: absolute;
     }
 }
 
@@ -138,5 +140,16 @@ body {
 
     .caja-contact {
         padding: 20px;
+    }
+        .logo {
+        margin-top: 3.5rem;
+        margin-left: 20rem;
+        position: absolute;
+    }
+
+    .btn-atras {
+        margin-top: 3rem;
+        margin-right: 20rem;
+        position: absolute;
     }
 }

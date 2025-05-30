@@ -174,12 +174,13 @@ body {
     border-bottom: 2px solid #76b293;
 }
 
-.ingredientes-input{
+.ingredientes-input {
     max-width: 80%;
     box-sizing: border-box;
     padding: 8px;
     font-size: 1rem;
 }
+
 .ingredientes-table {
     width: 100%;
     margin: 0 auto 30px;
@@ -277,7 +278,9 @@ footer a {
     .filtros {
         grid-template-columns: 1fr;
     }
-    .ingredientes-input{
-    width: 90%;
-}
+
+    .ingredientes-input {
+        width: 4rem;
+
+    }
 }

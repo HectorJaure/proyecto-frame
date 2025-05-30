@@ -176,7 +176,6 @@ body {
 
 .ingredientes-table {
     width: 100%;
-    max-width: 600px;
     margin: 0 auto 30px;
     border-collapse: collapse;
 }

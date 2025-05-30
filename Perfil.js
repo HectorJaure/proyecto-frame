@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.fila .dato')[1].textContent = usuarioActual.email;
 
     document.getElementById('logout').addEventListener('click', function(e) {
-        e.preventDefault();
         localStorage.removeItem('usuarioActual');
         window.location.replace = "index.html";
     });

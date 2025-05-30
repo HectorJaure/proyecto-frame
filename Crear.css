@@ -280,7 +280,6 @@ footer a {
     }
 
     .ingredientes-input {
-        width: 4rem;
-
+        width: 4rem !important;
     }
 }

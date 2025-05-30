@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 localStorage.setItem('usuarioActual', JSON.stringify({
                     username: "22050029",
-                    email: "admin@example.com",
+                    email: "22050029@itsn.edu.mx",
                     password: "12345"
                 }));
             }

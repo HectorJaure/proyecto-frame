@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // Redirigir
-            window.location.href = "Inicio.html";
+            window.location.href = "inicio.html";
         } else {
             mostrarError("Usuario o contraseña incorrectos.");
             contraseña.value = "";

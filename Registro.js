@@ -112,18 +112,4 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
-
-    const style = document.createElement('style');
-    style.textContent = `
-        .is-invalid {
-            border-color: #dc3545 !important;
-        }
-        .error-message {
-            color: #dc3545;
-            font-size: 0.875rem;
-            margin-top: 5px;
-            display: none;
-        }
-    `;
-    document.head.appendChild(style);
 });

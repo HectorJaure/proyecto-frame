@@ -10,33 +10,27 @@ document.addEventListener('DOMContentLoaded', function() {
         error.textContent = '';
         error.style.display = 'none';
         
-        // Validar campos vacíos
         if (nombre.value.trim() === "" || contraseña.value.trim() === "") {
             mostrarError("Por favor, ingrese ambos campos.");
             return;
         }
-        
-        // Obtener usuarios registrados
+
         const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
         
-        // Buscar usuario (por nombre de usuario o email)
         const usuarioValido = usuarios.find(user => 
             (user.username === nombre.value.trim() || user.email === nombre.value.trim()) && 
             user.password === contraseña.value.trim()
         );
         
-        // Credenciales de respaldo (puedes eliminarlas en producción)
         const credencialesRespaldo = (
             nombre.value.trim() === "22050029" && 
             contraseña.value.trim() === "12345"
         );
 
         if (usuarioValido || credencialesRespaldo) {
-            // Almacenar sesión
             if (usuarioValido) {
                 localStorage.setItem('usuarioActual', JSON.stringify(usuarioValido));
             } else {
-                // Para el usuario de respaldo
                 localStorage.setItem('usuarioActual', JSON.stringify({
                     username: "22050029",
                     email: "admin@example.com",
@@ -44,8 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }));
             }
             
-            // Redirigir
-            window.location.href = "inicio.html";
+            window.location.replace("./inicio.html");
         } else {
             mostrarError("Usuario o contraseña incorrectos.");
             contraseña.value = "";

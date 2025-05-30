@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crear Receta - Alejandria Culinaria</title>
   <link rel="icon" href="assets/logoF.png" type="image/png">
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="Crear.css">
 </head>
+
 <body>
-  <!-- Header con Bootstrap -->
+
   <header class="header">
     <a href="inicio.html"><img src="assets/Atras.png" alt="Volver" class="atras"></a>
     <div class="menus">
@@ -20,106 +21,120 @@
     </div>
     <img src="assets/logo.png" alt="logo" class="logo">
   </header>
-  
-  <!-- Contenido principal -->
+
   <main class="flex-grow-1 py-4">
     <div class="container">
       <h1 class="titulop">Crear Receta</h1>
+
+      <div id="resultadoGeneral" class="resultados"></div>
       
-      <!-- Nombre de la receta -->
-      <div class="busquedac">
-        <input type="text" placeholder="Nombre de la receta">
-        <button class="btn-submit" type="button">
-          <img src="assets/Subir.png" alt="Crear" class="submit-icon">
-        </button>
-      </div>
-      
-      <!-- Filtros -->
-      <div class="filtros">
-        <select class="form-select">
-          <option value="">Categoría</option>
-          <option>Ensaladas</option>
-          <option>Platos principales</option>
-          <option>Postres</option>
-          <option>Bebidas</option>
-        </select>
+      <form id="formReceta">
+        <div class="busquedac">
+          <div class="input-container">
+            <input type="text" id="nombreReceta" placeholder="Nombre de la receta">
+          </div>
+          <button class="btn-submit" type="button" id="btnPublicar">
+            <img src="assets/Subir.png" alt="Crear" class="submit-icon">
+          </button>
+        </div>
+
+        <div id="nombreError" class="error-message"></div>
         
-        <select class="form-select">
-          <option value="">Imagen</option>
-          <option>Subir imagen...</option>
-        </select>
+        <div class="filtros">
+          <div class="select-container">
+            <select id="categoria">
+              <option value="">Categoría</option>
+              <option>Ensaladas</option>
+              <option>Platos principales</option>
+              <option>Postres</option>
+              <option>Bebidas</option>
+            </select>
+            <div id="categoriaError" class="error-message"></div>
+          </div>
+          
+          <div class="select-container">
+            <select id="imagen">
+              <option value="">Imagen</option>
+              <option>Subir imagen...</option>
+            </select>
+            <div id="imagenError" class="error-message"></div>
+          </div>
+          
+          <div class="select-container">
+            <select id="dificultad">
+              <option value="">Dificultad</option>
+              <option>Fácil</option>
+              <option>Media</option>
+              <option>Difícil</option>
+            </select>
+            <div id="dificultadError" class="error-message"></div>
+          </div>
+          
+          <div class="select-container">
+            <select id="tiempo">
+              <option value="">Tiempo</option>
+              <option>Menos de 30 min</option>
+              <option>30-60 min</option>
+              <option>Más de 1 hora</option>
+            </select>
+            <div id="tiempoError" class="error-message"></div>
+          </div>
+        </div>
         
-        <select class="form-select">
-          <option value="">Dificultad</option>
-          <option>Fácil</option>
-          <option>Media</option>
-          <option>Difícil</option>
-        </select>
+        <h2 class="titulop1">Ingredientes</h2>
+        <table class="ingredientes-table" id="tablaIngredientes">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Cantidad</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="text" class="ingrediente-input ingrediente-nombre" placeholder="Nombre ingrediente"></td>
+              <td><input type="text" class="ingrediente-input ingrediente-cantidad" placeholder="Cantidad"></td>
+            </tr>
+            <tr>
+              <td colspan="3" style="text-align: center;">
+                <button type="button" class="btn-agregar" id="btnAgregarIngrediente">
+                  <img src="assets/agregar.png" alt="Agregar ingrediente" class="agregar-icon">
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="ingredientesError" class="ingredientes-error"></div>
         
-        <select class="form-select">
-          <option value="">Tiempo</option>
-          <option>Menos de 30 min</option>
-          <option>30-60 min</option>
-          <option>Más de 1 hora</option>
-        </select>
-      </div>
-      
-      <!-- Ingredientes -->
-      <h2 class="titulop1">Ingredientes</h2>
-      <table class="ingredientes-table">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Cantidad</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Carne de res</td>
-            <td>1 kg</td>
-          </tr>
-          <tr>
-            <td>Jitomate</td>
-            <td>1/4 kg</td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <button class="btn-agregar">
-                <img src="assets/agregar.png" alt="Agregar ingrediente" class="agregar-icon">
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      
-      <!-- Preparación -->
-      <h2 class="titulop1">Preparación</h2>
-      <textarea name="Preparacion" id="Preparacion" class="textareaPre" placeholder="Describe el paso a paso de la preparación..."></textarea>
+        <h2 class="titulop1">Preparación</h2>
+        <textarea id="preparacion" class="textareaPre" placeholder="Describe el paso a paso de la preparación..."></textarea>
+        <div id="preparacionError" class="preparacion-error"></div>
+      </form>
     </div>
   </main>
-  
-  <!-- Footer -->
+
   <footer class="footer">
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-links">
-                    <a href="Contacto.html" class="footer-link">Contáctanos</a>
-                    <a href="Sobre nosotros.html" class="footer-link">Sobre nosotros</a>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
-                    </div>
-                </div>
-
-                <div class="copyright">
-                    © 2023 Alejandría Culinaria. Todos los derechos reservados.
-                </div>
-            </div>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="Contacto.html" class="footer-link">Contáctanos</a>
+          <a href="Sobre nosotros.html" class="footer-link">Sobre nosotros</a>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+          </div>
         </div>
-    </footer>
 
-  <!-- Bootstrap JS -->
+        <div class="copyright">
+          © 2023 Alejandría Culinaria. Todos los derechos reservados.
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="Crear.js"></script>
 </body>
+
 </html>

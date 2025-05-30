@@ -44,10 +44,6 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.form-group {
-    margin-bottom: 20px;
-}
-
 label {
     display: block;
     margin-bottom: 8px;
@@ -70,7 +66,7 @@ input:focus {
     box-shadow: 0 0 0 3px rgba(118, 178, 147, 0.25);
 }
 
-button[type="submit"] {
+button[type="button"] {
     width: 100%;
     padding: 12px;
     background-color: #76b293;
@@ -84,7 +80,7 @@ button[type="submit"] {
     margin-top: 10px;
 }
 
-button[type="submit"]:hover {
+button[type="button"]:hover {
     background-color: #5d9c7d;
 }
 
@@ -120,4 +116,20 @@ button[type="submit"]:hover {
     top: 35px;
     cursor: pointer;
     color: #6c757d;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    padding: 0.5rem;
+    display: none;
+    width: 80%; 
+    border-radius: 4px;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.form-group
+{
+    margin: 1rem auto;
 }

@@ -6,68 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil - Alejandria Culinaria</title>
     <link rel="icon" href="assets/logoF.png" type="image/png">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Perfil.css">
 </head>
 
 <body>
-    <a href="inicio.html"><img src="assets/Atras.png" alt="Volver atrás" class="atras"></a>
-    <a href="index.html"><img src="assets/Cerrar.png" alt="Cerrar sesión" class="logo"></a>
+    <header>
+        <a href="inicio.html"><img src="assets/Atras.png" alt="Volver atrás" class="atras"></a>
+        <a href="index.html"><img src="assets/Cerrar.png" alt="Cerrar sesión" class="logo" id="logout"></a>
+    </header>
 
-    <div class="container perfil-usuario">
-        <h2 class="titulor">Perfil</h2>
+    <main>
+        <div class="container perfil-usuario">
+            <h2 class="titulor">Perfil</h2>
 
-        <div class="fila">
-            <label>Nombre:</label>
-            <div class="dato">[Aquí el nombre del usuario]</div>
-        </div>
+            <div class="fila">
+                <label>Nombre:</label>
+                <div class="dato">[Aquí el nombre del usuario]</div>
+            </div>
 
-        <div class="fila">
-            <label>Correo electrónico:</label>
-            <div class="dato">[Aquí el correo]</div>
-        </div>
+            <div class="fila">
+                <label>Correo electrónico:</label>
+                <div class="dato">[Aquí el correo]</div>
+            </div>
 
-        <h3 class="titulop1 text-center">Recetas compartidas:</h3>
+            <h3 class="titulop1 text-center">Recetas compartidas:</h3>
 
-        <div class="recetas" id="recetas-container">
-            <div class="tarjeta-receta" id="receta-1">
-                <div class="titulo-caja">Pasta</div>
-                <img src="assets/pasta.png" alt="Pasta" class="imag">
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <button class="anular">
-                            <img src="assets/editar.jpg" alt="Editar" onclick="editarReceta(1)">
-                        </button>
+            <div class="recetas" id="recetas-container">
+                <div class="tarjeta-receta" id="receta-1">
+                    <div class="titulo-caja">Pasta</div>
+                    <img src="assets/pasta.png" alt="Pasta" class="imag">
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <button class="anular">
+                                <img src="assets/editar.jpg" alt="Editar" onclick="editarReceta(1)">
+                            </button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="anular">
+                                <img src="assets/borrar.png" alt="Borrar" onclick="confirmarEliminar(1)">
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-auto">
-                        <button class="anular">
-                            <img src="assets/borrar.png" alt="Borrar" onclick="confirmarEliminar(1)">
-                        </button>
+                </div>
+
+                <div class="tarjeta-receta" id="receta-2">
+                    <div class="titulo-caja">Hamburguesa</div>
+                    <img src="assets/hamburguesa.png" alt="Hamburguesa">
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <button class="anular">
+                                <img src="assets/editar.jpg" alt="Editar" onclick="editarReceta(2)">
+                            </button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="anular">
+                                <img src="assets/borrar.png" alt="Borrar" onclick="confirmarEliminar(2)">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="tarjeta-receta" id="receta-2">
-                <div class="titulo-caja">Hamburguesa</div>
-                <img src="assets/hamburguesa.png" alt="Hamburguesa">
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <button class="anular">
-                            <img src="assets/editar.jpg" alt="Editar" onclick="editarReceta(2)">
-                        </button>
-                    </div>
-                    <div class="col-auto">
-                        <button class="anular">
-                            <img src="assets/borrar.png" alt="Borrar" onclick="confirmarEliminar(2)">
-                        </button>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-
+    </main>
     <div class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -85,8 +87,7 @@
             </div>
         </div>
     </div>
-    
-    <!-- Footer -->
+
     <footer class="footer">
         <div class="container">
             <div class="footer-container">
@@ -107,8 +108,7 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="Perfil.js"></script>
 </body>
 

@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favoritas - Alejandria Culinaria</title>
     <link rel="icon" href="assets/logoF.png" type="image/png">
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome para el icono X -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Favoritas.css">
 </head>
 
 <body>
-    <!-- Header similar al de Crear Receta -->
     <header class="header">
         <a href="inicio.html"><img src="assets/Atras.png" alt="Volver" class="atras"></a>
         <div class="menus">
@@ -24,78 +22,88 @@
         <img src="assets/logo.png" alt="logo" class="logo">
     </header>
 
-    <!-- Contenido principal -->
-    <div class="container contenido">
-        <h1 class="titulo"><i>Favoritas</i></h1>
-        
-        <!-- Grid de categorías -->
-        <div class="contenedor-categorias" id="contenedor-categorias">
-            <div class="caja">
-                <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i class="fas fa-times"></i></button>
-                <div class="titulo-caja">Ensaladas</div>
-                <img src="assets/ensalada.png" alt="Ensalada">
-            </div>
-            
-            <div class="caja">
-                <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i class="fas fa-times"></i></button>
-                <div class="titulo-caja">Sandwiches</div>
-                <img src="assets/sandwich.png" alt="Sandwich">
-            </div>
-            
-            <a href="Receta.html" class="text-decoration-none">
+    <main>
+        <div class="container contenido">
+            <h1 class="titulo"><i>Favoritas</i></h1>
+
+            <div class="contenedor-categorias" id="contenedor-categorias">
                 <div class="caja">
-                    <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i class="fas fa-times"></i></button>
-                    <div class="titulo-caja">Pastas</div>
-                    <img src="assets/pasta.png" alt="Pasta">
+                    <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i
+                            class="fas fa-times"></i></button>
+                    <div class="titulo-caja">Ensaladas</div>
+                    <img src="assets/ensalada.png" alt="Ensalada">
                 </div>
-            </a>
-            
-            <div class="caja">
-                <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i class="fas fa-times"></i></button>
-                <div class="titulo-caja">Postres</div>
-                <img src="assets/postre.png" alt="Postre">
-            </div>
-            
-            <div class="caja">
-                <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i class="fas fa-times"></i></button>
-                <div class="titulo-caja">Pizzas</div>
-                <img src="assets/pizza.png" alt="Pizza">
-            </div>
-            
-            <div class="caja">
-                <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i class="fas fa-times"></i></button>
-                <div class="titulo-caja">Tacos</div>
-                <img src="assets/tacos.png" alt="Tacos">
-            </div>
-            
-            <div class="caja">
-                <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i class="fas fa-times"></i></button>
-                <div class="titulo-caja">Hamburguesas</div>
-                <img src="assets/hamburguesa.png" alt="Hamburguesas">
-            </div>
-            
-            <div class="caja">
-                <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i class="fas fa-times"></i></button>
-                <div class="titulo-caja">Bebidas</div>
-                <img src="assets/bebidas.png" alt="Bebidas">
-            </div>
-            
-            <div class="caja">
-                <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i class="fas fa-times"></i></button>
-                <div class="titulo-caja">Tortas</div>
-                <img src="assets/tortas-ahogadas.jpg" alt="Tortas">
-            </div>
-            
-            <div class="caja">
-                <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i class="fas fa-times"></i></button>
-                <div class="titulo-caja">Repostería</div>
-                <img src="assets/pastel.png" alt="Pastel">
+
+                <div class="caja">
+                    <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i
+                            class="fas fa-times"></i></button>
+                    <div class="titulo-caja">Sandwiches</div>
+                    <img src="assets/sandwich.png" alt="Sandwich">
+                </div>
+
+                <a href="Receta.html" class="text-decoration-none">
+                    <div class="caja">
+                        <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i
+                                class="fas fa-times"></i></button>
+                        <div class="titulo-caja">Pastas</div>
+                        <img src="assets/pasta.png" alt="Pasta">
+                    </div>
+                </a>
+
+                <div class="caja">
+                    <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i
+                            class="fas fa-times"></i></button>
+                    <div class="titulo-caja">Postres</div>
+                    <img src="assets/postre.png" alt="Postre">
+                </div>
+
+                <div class="caja">
+                    <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i
+                            class="fas fa-times"></i></button>
+                    <div class="titulo-caja">Pizzas</div>
+                    <img src="assets/pizza.png" alt="Pizza">
+                </div>
+
+                <div class="caja">
+                    <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i
+                            class="fas fa-times"></i></button>
+                    <div class="titulo-caja">Tacos</div>
+                    <img src="assets/tacos.png" alt="Tacos">
+                </div>
+
+                <div class="caja">
+                    <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i
+                            class="fas fa-times"></i></button>
+                    <div class="titulo-caja">Hamburguesas</div>
+                    <img src="assets/hamburguesa.png" alt="Hamburguesas">
+                </div>
+
+                <div class="caja">
+                    <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i
+                            class="fas fa-times"></i></button>
+                    <div class="titulo-caja">Bebidas</div>
+                    <img src="assets/bebidas.png" alt="Bebidas">
+                </div>
+
+                <div class="caja">
+                    <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i
+                            class="fas fa-times"></i></button>
+                    <div class="titulo-caja">Tortas</div>
+                    <img src="assets/tortas-ahogadas.jpg" alt="Tortas">
+                </div>
+
+                <div class="caja">
+                    <button class="btn-eliminar" onclick="mostrarModalConfirmacion(this)"><i
+                            class="fas fa-times"></i></button>
+                    <div class="titulo-caja">Repostería</div>
+                    <img src="assets/pastel.png" alt="Pastel">
+                </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Modal de confirmación -->
-    <div class="modal fade" id="confirmacionModal" tabindex="-1" aria-labelledby="confirmacionModalLabel" aria-hidden="true">
+    </main>
+
+    <div class="modal fade" id="confirmacionModal" tabindex="-1" aria-labelledby="confirmacionModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -112,8 +120,7 @@
             </div>
         </div>
     </div>
-    
-    <!-- Footer -->
+
     <footer class="footer">
         <div class="container">
             <div class="footer-container">
@@ -134,9 +141,9 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="./js/bootstrap.bundle.min.js"></script>
 
     <script src="Favoritas.js"></script>
 </body>
+
 </html>

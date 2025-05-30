@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +11,38 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Contraseña.css">
 </head>
-<body>
-    <div class="password-recovery-container">
-        <div class="password-recovery-box">
-            <div class="logo">
-                <img src="assets/logo.png" alt="Alejandría Culinaria">
-            </div>
-            <h1>¿Olvidaste tu contraseña?</h1>
-            <p>Ingresa tu correo electrónico registrado y te enviaremos un enlace para restablecer tu contraseña.</p>
-            
-            <form class="recovery-form" id="recoveryForm">
-                <div class="form-group">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" class="form-control" placeholder="tucorreo@ejemplo.com" required>
-                </div>
-                
-                <button type="submit" class="submit-btn">Enviar enlace de recuperación</button>
-                
-                <div class="links">
-                    <a href="index.html">← Volver al inicio de sesión</a>
-                </div>
-            </form>
-        </div>
-    </div>
 
-    <!-- Bootstrap JS -->
+<body>
+    <main>
+        <div class="password-recovery-container">
+            <div class="password-recovery-box">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Alejandría Culinaria">
+                </div>
+                <h1>¿Olvidaste tu contraseña?</h1>
+                <p>Ingresa tu correo electrónico registrado y te enviaremos un enlace para restablecer tu contraseña.
+                </p>
+
+                <form class="recovery-form" id="recoveryForm">
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" class="form-control"
+                            placeholder="tucorreo@ejemplo.com" required>
+                        <div id="error" class="error-message" style="margin-top: 1.5rem;"></div>
+                    </div>
+
+                    <button type="button" class="submit-btn" id="enviar">Enviar enlace de recuperación</button>
+
+                    <div class="links">
+                        <a href="index.html">← Volver al inicio de sesión</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="Contraseña.js"></script>
 </body>
+
 </html>

@@ -17,3 +17,10 @@ function eliminarReceta() {
 }
 
 document.getElementById('confirmDelete').addEventListener('click', eliminarReceta);
+
+document.getElementById('logout').addEventListener('click', function() {
+    localStorage.removeItem('usuarioActual');
+    window.location.href = "index.html";
+});
+
+

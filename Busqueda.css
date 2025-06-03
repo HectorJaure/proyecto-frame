@@ -86,7 +86,6 @@ body {
   }
 
   #filtrom {
-    display: absolute;
     margin-top: -1rem;
   }
 }
